@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2014 Eugenio Marletti
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<resources>
+
+    <style name="BulletStyle">
+
+        <item name="bulletSizeAnimationInterpolator">@android:anim/accelerate_decelerate_interpolator</item>
+        <item name="bulletSizeAnimationDuration">200</item>
+        <item name="bulletSizeActivated">16dp</item>
+        <item name="bulletSizeNotActivated">10dp</item>
+
+        <item name="bulletColorAnimationInterpolator">@android:anim/linear_interpolator</item>
+        <item name="bulletColorAnimationDuration">200</item>
+        <item name="bulletColorError">#DD4B39</item>
+        <item name="bulletColorChecked">#4385F4</item>
+        <item name="bulletColorNormal">#B2B2B2</item>
+
+        <item name="ringSizeAnimationInterpolator">@android:anim/accelerate_interpolator</item>
+        <item name="ringSizeStart">12dp</item>
+        <item name="ringSizeEnd">64dp</item>
+
+        <item name="ringThicknessAnimationInterpolator">@android:anim/accelerate_interpolator</item>
+        <item name="ringThicknessStart">6dp</item>
+        <item name="ringThicknessEnd">0dp</item>
+
+        <item name="ringAlphaAnimationInterpolator">@android:anim/accelerate_interpolator</item>
+        <item name="ringAlphaStart">0.5</item>
+        <item name="ringAlphaEnd">0</item>
+
+        <item name="ringAnimationDuration">1250</item>
+        <item name="ringAnimationPauseDuration">1000</item>
+
+        <item name="isError">false</item>
+        <item name="isWorking">false</item>
+        <item name="isActivated">false</item>
+        <item name="isChecked">false</item>
+
+    </style>
+
+    <declare-styleable name="Bullet">
+
+        <attr name="bulletSizeAnimationInterpolator" format="reference"/>
+        <attr name="bulletSizeAnimationDuration" format="integer|reference"/>
+        <attr name="bulletSizeActivated" format="dimension|reference"/>
+        <attr name="bulletSizeNotActivated" format="dimension|reference"/>
+
+        <attr name="bulletColorAnimationInterpolator" format="reference"/>
+        <attr name="bulletColorAnimationDuration" format="integer|reference"/>
+        <attr name="bulletColorError" format="color|reference"/>
+        <attr name="bulletColorChecked" format="color|reference"/>
+        <attr name="bulletColorNormal" format="color|reference"/>
+
+        <attr name="ringSizeAnimationInterpolator" format="reference"/>
+        <attr name="ringSizeStart" format="dimension|reference"/>
+        <attr name="ringSizeEnd" format="dimension|reference"/>
+
+        <attr name="ringThicknessAnimationInterpolator" format="reference"/>
+        <attr name="ringThicknessStart" format="dimension|reference"/>
+        <attr name="ringThicknessEnd" format="dimension|reference"/>
+
+        <attr name="ringAlphaAnimationInterpolator" format="reference"/>
+        <attr name="ringAlphaStart" format="float|reference"/>
+        <attr name="ringAlphaEnd" format="float|reference"/>
+
+        <attr name="ringAnimationDuration" format="integer|reference"/>
+        <attr name="ringAnimationPauseDuration" format="integer|reference"/>
+
+        <attr name="isError" format="boolean|reference"/>
+        <attr name="isWorking" format="boolean|reference"/>
+        <attr name="isActivated" format="boolean|reference"/>
+        <attr name="isChecked" format="boolean|reference"/>
+
+    </declare-styleable>
+
+    <attr name="bulletStyle" format="reference"/>
+
+</resources>

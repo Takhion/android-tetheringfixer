@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2014 Eugenio Marletti
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<resources>
+
+    <string name="step_check_root">Verifica root disponibile</string>
+    <string name="step_get_root">Ottenimento permessi di root</string>
+    <string name="step_check_components">Accertamento componenti richiesti</string>
+    <string name="step_check_fix">Controllo tethering ripristinato</string>
+    <string name="step_apply_fix">Ripristino tethering</string>
+
+    <string name="click_start">Clicca la lista per iniziare</string>
+    <string name="click_retry">Clicca la lista per riprovare</string>
+
+    <string name="fix_at_boot">Ripristina all\'avvio</string>
+    <string name="fix_at_boot_yes">SI</string>
+    <string name="fix_at_boot_no">NO</string>
+
+    <string name="tethering_fixed">Tethering\nripristinato!\n:)</string>
+
+    <string name="error_no_root">Root non disponibile :(\nÈ NECESSARIO, mi dispiace!</string>
+    <string name="error_root_denied">Root negato :(\nÈ NECESSARIO! Provare ancora?</string>
+    <string name="error_iptables_not_found">Applicativo "iptables" non trovato :(\nÈ NECESSARIO, mi dispiace!</string>
+    <string name="error_timeout">Richiesta scaduta :(\nProvare ancora?</string>
+    <string name="error_io">Errore I/O :(\nSignifica… Beh, cerca su Google!\nProvare ancora?</string>
+
+    <string name="service_executing">Esecuzione…</string>
+    <string name="service_error">Errore!</string>
+    <string name="service_retry">Riprova</string>
+
+</resources>

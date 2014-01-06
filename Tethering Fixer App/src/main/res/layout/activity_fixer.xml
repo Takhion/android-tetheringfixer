@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2014 Eugenio Marletti
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<!-- using RelativeLayout instead of vertical LinearLayout so we can draw the card on top -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center">
+
+    <me.eugeniomarletti.tetheringfixer.android.TextView
+        android:id="@+id/text_click"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/grey"
+        android:textAllCaps="true"
+        android:text="@string/click_start"
+        style="@style/ActivityFixer.TextAroundCard"/>
+
+    <me.eugeniomarletti.tetheringfixer.android.TextView
+        android:id="@+id/text_error"
+        android:layout_below="@+id/card"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/red"
+        style="@style/ActivityFixer.TextAroundCard"/>
+
+    <!-- using nested FrameLayouts so we can have a semi-transparent shadow while clipping content inside the card -->
+    <FrameLayout
+        android:id="@+id/card"
+        android:layout_below="@+id/text_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_shadow">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:foreground="@drawable/card_mask"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                tools:ignore="UselessParent"/>
+
+            <me.eugeniomarletti.tetheringfixer.android.BulletExpandEffect
+                android:id="@+id/bullet_expand_effect"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"/>
+
+            <me.eugeniomarletti.tetheringfixer.android.TextView
+                android:id="@+id/text_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingMultiplier="1.1"
+                android:text="@string/tethering_fixed"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

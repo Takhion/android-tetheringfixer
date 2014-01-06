@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Tethering Fixer.iml" filepath="$PROJECT_DIR$/Tethering Fixer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tethering Fixer App/Tethering Fixer App.iml" filepath="$PROJECT_DIR$/Tethering Fixer App/Tethering Fixer App.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,6 @@
 <component name="CopyrightManager">
-  <settings default="">
+  <settings default="MIT">
     <module2copyright />
+    <LanguageOptions name="__TEMPLATE__" />
   </settings>
 </component>
